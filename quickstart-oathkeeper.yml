@@ -3,12 +3,12 @@ version: '3.7'
 services:
   kratos:
     environment:
-      - SERVE_PUBLIC_BASE_URL=http://127.0.0.1:4455/.ory/kratos/public/
+      - SERVE_PUBLIC_BASE_URL=http://135.181.102.130:4455/.ory/kratos/public/
 
   kratos-selfservice-ui-node:
     environment:
       - PORT=4435
-      - KRATOS_BROWSER_URL=http://127.0.0.1:4455/.ory/kratos/public
+      - KRATOS_BROWSER_URL=http://135.181.102.130:4455/.ory/kratos/public
       - JWKS_URL=http://oathkeeper:4456/.well-known/jwks.json
       - SECURITY_MODE=jwks
 
