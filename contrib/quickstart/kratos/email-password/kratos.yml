@@ -73,6 +73,10 @@ hashers:
 
 identity:
   default_schema_url: file:///etc/config/kratos/identity.schema.json
+  schemas:
+    # When creating an identity that uses this schema, `traits_schema_id: customer` would be set for that identity.
+    - id: admin
+      url: file:///etc/config/kratos/admin.identity.schema.json
 
 courier:
   smtp:
