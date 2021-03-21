@@ -27,7 +27,7 @@
     # url: "http://kratos-selfservice-ui-node:4435"
     url: "http://135.181.102.130:4200"
   match:
-    url: "http://135.181.102.130:4455/<{error,recovery,verify,auth/*,**.css,**.js}{/,}>"
+    url: "http://135.181.102.130:4455/<{/,*,,error,recovery,verify,auth/*,**.css,**.js}>"
     methods:
       - GET
   authenticators:
@@ -46,7 +46,7 @@
     url: "http://135.181.102.130:4200"
     # url: "http://kratos-selfservice-ui-node:4435"
   match:
-    url: "http://135.181.102.130:4455/<{,debug,dashboard,settings}>"
+    url: "http://135.181.102.130:4455/<{debug,dashboard,settings}>"
     methods:
       - GET
   authenticators:

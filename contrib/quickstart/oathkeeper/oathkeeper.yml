@@ -17,8 +17,10 @@ serve:
       allowed_headers:
         - Authorization
         - Content-Type
+        - Access-Control-Allow-Origin
       exposed_headers:
         - Content-Type
+        - Access-Control-Allow-Origin
       allow_credentials: true
       debug: true
 

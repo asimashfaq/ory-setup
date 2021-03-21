@@ -6,6 +6,22 @@ serve:
   public:
     base_url: http://135.181.102.130:4433/
     cors:
+      allowed_origins:
+        - "http://135.181.102.130:4455"
+      allowed_headers:
+        - Authorization
+        - Content-Type
+        - Access-Control-Allow-Origin
+      exposed_headers:
+        - Content-Type
+        - Access-Control-Allow-Origin
+      allowed_methods:
+        - POST
+        - GET
+        - PUT
+        - PATCH
+        - DELETE
+        - OPTIONS
       enabled: true
   admin:
     base_url: http://kratos:4434/
